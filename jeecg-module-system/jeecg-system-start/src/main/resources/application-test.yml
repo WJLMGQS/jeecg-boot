@@ -143,8 +143,8 @@ spring:
           #driver-class-name: com.mysql.cj.jdbc.Driver
   #redis 配置
   redis:
-    database: 0
-    host: 192.168.1.199
+    database: 1
+    host: 124.220.218.217
     port: 6379
     password: ''
 #mybatis plus 设置
@@ -232,7 +232,7 @@ jeecg:
     logRetentionDays: 30
   #分布式锁配置
   redisson:
-    address: 127.0.0.1:6379
+    address: jeecg-boot-redis:6379
     password:
     type: STANDALONE
     enabled: true

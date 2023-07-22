@@ -131,9 +131,9 @@ spring:
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
-          url: jdbc:mysql://127.0.0.1:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+          url: jdbc:mysql://jeecg-boot-mysql:3307/mtdelog_boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
           username: root
-          password: root
+          password: mtdelog@2023
           driver-class-name: com.mysql.cj.jdbc.Driver
           # 多数据源配置
           #multi-datasource1:
@@ -143,10 +143,10 @@ spring:
           #driver-class-name: com.mysql.cj.jdbc.Driver
   #redis 配置
   redis:
-    database: 0
-    host: 127.0.0.1
-    port: 6379
-    password: ''
+    database: 1
+    host: 124.220.218.217
+    port: 6388
+    password: mtdelog@2023
 #mybatis plus 设置
 mybatis-plus:
   mapper-locations: classpath*:org/jeecg/modules/**/xml/*Mapper.xml
@@ -195,7 +195,7 @@ jeecg:
   # ElasticSearch 6设置
   elasticsearch:
     cluster-name: jeecg-ES
-    cluster-nodes: 127.0.0.1:9200
+    cluster-nodes: 124.220.218.217:9200
     check-enabled: false
   # 在线预览文件服务器地址配置
   file-view-domain: http://fileview.jeecg.com
@@ -213,18 +213,18 @@ jeecg:
   #xxl-job配置
   xxljob:
     enabled: false
-    adminAddresses: http://127.0.0.1:9080/xxl-job-admin
+    adminAddresses: http://124.220.218.217:9080/xxl-job-admin
     appname: ${spring.application.name}
     accessToken: ''
-    address: 127.0.0.1:30007
-    ip: 127.0.0.1
+    address: 124.220.218.217:30007
+    ip: 124.220.218.217
     port: 30007
     logPath: logs/jeecg/job/jobhandler/
     logRetentionDays: 30
   #分布式锁配置
   redisson:
-    address: 127.0.0.1:6379
-    password:
+    address: jeecg-boot-redis:6388
+    password: mtdelog@2023
     type: STANDALONE
     enabled: true
 #cas单点登录

@@ -427,11 +427,13 @@
                 <!--当前环境-->
                 <profile.name>dev</profile.name>
 				<!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+                <config.server-addr>http://124.220.218.217:18848</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
-				<config.namespace></config.namespace>
+				<config.namespace>ac14ab82-51f8-4f0c-aa5b-25fb8384bfb6</config.namespace>
 				<!--Nacos配置分组名称-->
 				<config.group>DEFAULT_GROUP</config.group>
+				<config.username>nacos</config.username>
+				<config.password>nacos</config.password>
             </properties>
         </profile>
         <!-- 测试 -->
@@ -441,9 +443,9 @@
                 <!--当前环境-->
                 <profile.name>test</profile.name>
 				<!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+                <config.server-addr>jeecg-boot-nacos:18848</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
-				<config.namespace></config.namespace>
+				<config.namespace>ac14ab82-51f8-4f0c-aa5b-25fb8384bfb6</config.namespace>
 				<!--Nacos配置分组名称-->
 				<config.group>DEFAULT_GROUP</config.group>
             </properties>
@@ -455,9 +457,9 @@
                 <!--当前环境-->
                 <profile.name>prod</profile.name>
 				<!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+                <config.server-addr>jeecg-boot-nacos</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
-				<config.namespace></config.namespace>
+				<config.namespace>ac14ab82-51f8-4f0c-aa5b-25fb8384bfb6</config.namespace>
 				<!--Nacos配置分组名称-->
 				<config.group>DEFAULT_GROUP</config.group>
             </properties>
