@@ -1,5 +1,0 @@
-172.16.0.20 jeecg-boot-mysql
-172.16.0.30 minio.jeecg.com
-172.16.0.40 jeecg-boot-rabbitmq
-172.16.0.50 jeecg-boot-redis
-172.16.0.60 jeecg-boot-nacos

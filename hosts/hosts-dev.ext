@@ -1,0 +1,11 @@
+172.16.0.20 mtdelog-mysql.org
+172.16.0.30 mtdelog-minio.org
+172.16.0.40 mtdelog-rabbitmq.org
+172.16.0.50 mtdelog-redis.org
+172.16.0.60 mtdelog-nacos.org
+
+124.220.218.217 mtdelog-mysql.org
+124.220.218.217 mtdelog-minio.org
+124.220.218.217 mtdelog-rabbitmq.org
+124.220.218.217 mtdelog-redis.org
+124.220.218.217 mtdelog-nacos.org
