@@ -1,6 +1,6 @@
 FROM anapsix/alpine-java:8_server-jre_unlimited
 
-MAINTAINER jeecgos@163.com
+MAINTAINER wjlmgqs@sina.com
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
@@ -10,6 +10,6 @@ WORKDIR /jeecg-cloud-gateway
 
 EXPOSE 9999
 
-ADD ./target/jeecg-cloud-gateway-3.5.2.jar ./
+ADD ./jeecg-cloud-gateway-3.5.2.jar ./
 
 CMD sleep 1;java -Dfile.encoding=utf-8 -Djava.security.egd=file:/dev/./urandom -jar jeecg-cloud-gateway-3.5.2.jar
