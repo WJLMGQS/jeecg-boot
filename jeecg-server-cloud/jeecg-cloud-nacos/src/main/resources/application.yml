@@ -5,7 +5,7 @@ server:
     accesslog:
       enabled: true
       pattern: '%h %l %u %t "%r" %s %b %D %{User-Agent}i %{Request-Source}i'
-    basedir: ''
+    basedir: 'logs'
 spring:
   datasource:
     platform: mysql
@@ -18,7 +18,7 @@ db:
   #user:
   #  '0': ${MYSQL-USER:root}
   url:
-    '0': jdbc:mysql://${MYSQL-HOST:jeecg-boot-mysql}:${MYSQL-PORT:3307}/${MYSQL-DB:mtdelog_nacos}?characterEncoding=utf8&connectTimeout=10000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    '0': jdbc:mysql://${MYSQL-HOST:mtdelog-mysql.org}:${MYSQL-PORT:3307}/${MYSQL-DB:mtdelog_nacos}?characterEncoding=utf8&connectTimeout=10000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
   user: ${MYSQL-PWD:root}
   password: ${MYSQL-USER:mtdelog@2023}
 
@@ -46,7 +46,7 @@ nacos:
             expire:
               seconds: 18000
             secret:
-              key: SecretKey01234567890123456789012345345678999987654901234567890123456789
+              key: R29kQU1aRFBVNlZMak5zYkZxaVNFS3JUMnQ3T3BsNWc=
       system:
         type: nacos
   istio:
@@ -62,4 +62,4 @@ nacos:
   security:
     ignore:
       urls: /,/error,/**/*.css,/**/*.js,/**/*.html,/**/*.map,/**/*.svg,/**/*.png,/**/*.ico,/console-ui/public/**,/v1/auth/**,/v1/console/health/**,/actuator/**,/v1/console/server/**
-  standalone: true
+  #standalone: true

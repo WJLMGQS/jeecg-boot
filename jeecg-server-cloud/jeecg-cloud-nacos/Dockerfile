@@ -1,4 +1,5 @@
 FROM anapsix/alpine-java:8_server-jre_unlimited
+LABEL name="wjlmgqs/mtdelog-nacos" version="1.0"
 
 MAINTAINER jeecgos@163.com
 
@@ -10,6 +11,6 @@ WORKDIR /jeecg-cloud-nacos
 
 EXPOSE 8848
 
-ADD ./target/jeecg-cloud-nacos-3.5.2.jar ./
+ADD ./jeecg-cloud-nacos-3.5.2.jar ./
 
 CMD sleep 1;java -Dfile.encoding=utf-8 -Djava.security.egd=file:/dev/./urandom -jar jeecg-cloud-nacos-3.5.2.jar

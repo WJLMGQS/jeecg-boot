@@ -427,7 +427,7 @@
                 <!--当前环境-->
                 <profile.name>dev</profile.name>
 				<!--Nacos服务地址-->
-                <config.server-addr>http://mtdelog-boot.org:18848</config.server-addr>
+                <config.server-addr>mtdelog-dev.org:18848</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
 				<config.namespace>ac14ab82-51f8-4f0c-aa5b-25fb8384bfb6</config.namespace>
 				<!--Nacos配置分组名称-->

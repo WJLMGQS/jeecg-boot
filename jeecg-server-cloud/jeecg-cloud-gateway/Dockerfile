@@ -1,5 +1,5 @@
 FROM anapsix/alpine-java:8_server-jre_unlimited
-
+LABEL name="wjlmgqs/mtdelog-gateway" version="1.0"
 MAINTAINER wjlmgqs@sina.com
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime

@@ -22,14 +22,14 @@ public class JeecgNacosApplication {
     /** 是否单机模式启动 */
     private static String standalone = "true";
     /** 是否开启鉴权 */
-    private static String enabled = "false";
+    private static String enabled = "true";
 
     public static void main(String[] args) {
         System.setProperty("nacos.standalone", standalone);
         System.setProperty("nacos.core.auth.enabled", enabled);
         System.setProperty("server.tomcat.basedir","logs");
         //自定义启动端口号
-        System.setProperty("server.port","8848");
+        //System.setProperty("server.port","8848");
         SpringApplication.run(JeecgNacosApplication.class, args);
     }
 
