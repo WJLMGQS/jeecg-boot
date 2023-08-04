@@ -1,8 +1,11 @@
-172.16.0.20 mtdelog-mysql.org
-172.16.0.30 mtdelog-minio.org
-172.16.0.40 mtdelog-rabbitmq.org
-172.16.0.50 mtdelog-redis.org
-172.16.0.60 mtdelog-nacos.org
+122.51.217.92 mtdelog-mysql.org
+122.51.217.92 mtdelog-minio.org
+122.51.217.92 mtdelog-rabbitmq.org
+122.51.217.92 mtdelog-redis.org
+122.51.217.92 mtdelog-nacos.org
+
+172.16.0.11 mtdelog-nginx.org
 172.16.0.80 mtdelog-gateway.org
+172.16.0.90 mtdelog-boot-sentinel.org
 
 172.16.0.200 mtdelog-boot.org
