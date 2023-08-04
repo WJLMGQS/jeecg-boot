@@ -26,7 +26,7 @@ spring:
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
-          url: jdbc:mysql://mtdelog-mysql.org:3307/mtdelog_boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+          url: jdbc:mysql://mtdelog-mysql.org:3306/mtdelog_boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
           username: root
           password: mtdelog@2023
           driver-class-name: com.mysql.cj.jdbc.Driver
@@ -34,7 +34,7 @@ spring:
     database: 1
     host: mtdelog-redis.org
     password: mtdelog@2023
-    port: 6388
+    port: 6379
   rabbitmq:
     host: mtdelog-rabbitmq.org
     username: mtdev
@@ -96,7 +96,7 @@ jeecg:
     logPath: logs/jeecg/job/jobhandler/
     logRetentionDays: 30
   redisson:
-    address: mtdelog-redis.org:6388
+    address: mtdelog-redis.org:6379
     password: mtdelog@2023
     type: STANDALONE
     enabled: true

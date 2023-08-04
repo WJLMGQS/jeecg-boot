@@ -18,7 +18,7 @@ db:
   #user:
   #  '0': ${MYSQL-USER:root}
   url:
-    '0': jdbc:mysql://${MYSQL-HOST:mtdelog-mysql.org}:${MYSQL-PORT:3307}/${MYSQL-DB:mtdelog_nacos}?characterEncoding=utf8&connectTimeout=10000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    '0': jdbc:mysql://${MYSQL-HOST:mtdelog-mysql.org}:${MYSQL-PORT:3306}/${MYSQL-DB:mtdelog_nacos}?characterEncoding=utf8&connectTimeout=10000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
   user: ${MYSQL-PWD:root}
   password: ${MYSQL-USER:mtdelog@2023}
 
