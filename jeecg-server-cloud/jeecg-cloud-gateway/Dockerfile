@@ -10,6 +10,6 @@ WORKDIR /jeecg-cloud-gateway
 
 EXPOSE 9999
 
-ADD ./jeecg-cloud-gateway-3.5.2.jar ./
+ADD ./jeecg-cloud-gateway-3.5.3.jar ./
 
-CMD sleep 1;java -Dfile.encoding=utf-8 -Djava.security.egd=file:/dev/./urandom -jar jeecg-cloud-gateway-3.5.2.jar
+CMD sleep 1;java -Dfile.encoding=utf-8 -Djava.security.egd=file:/dev/./urandom -jar jeecg-cloud-gateway-3.5.3.jar
