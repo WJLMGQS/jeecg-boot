@@ -23,6 +23,7 @@ services:
       - JVM_MMS=64m
     volumes:
       - ${SITES_PATH}:/etc/sites
+      - /usr/deploys/mnt/boot/logs:/root/logs/csp
     extra_hosts:
       - "mtdelog-mysql.org:122.51.217.92"
       - "mtdelog-minio.org:122.51.217.92"
@@ -43,6 +44,7 @@ services:
     restart: on-failure
     volumes:
       - ${SITES_PATH}:/etc/sites
+      - /usr/deploys/mnt/sentinel/logs:/root/logs/csp
     extra_hosts:
       - "mtdelog-nacos.org:122.51.217.92"
     networks:
@@ -60,7 +62,7 @@ services:
     mem_limit: 320m
     volumes:
       - ${SITES_PATH}:/etc/sites
-      - /usr/deploys/mnt/sentinel/logs:/root/logs/csp
+      - /usr/deploys/mnt/gateway/logs:/root/logs/csp
     extra_hosts:
       - "mtdelog-mysql.org:122.51.217.92"
       - "mtdelog-minio.org:122.51.217.92"

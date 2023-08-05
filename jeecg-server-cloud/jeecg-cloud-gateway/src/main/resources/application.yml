@@ -51,6 +51,9 @@ spring:
           # 指定nacos数据源
           nacos:
             server-addr: @config.server-addr@
+            namespace: @config.namespace@
+            username: @config.username@
+            password: @config.password@
             # 指定配置文件
             dataId: ${spring.application.name}-flow-rules
             # 指定分组
@@ -63,6 +66,9 @@ spring:
         degrade:
           nacos:
             server-addr: @config.server-addr@
+            namespace: @config.namespace@
+            username: @config.username@
+            password: @config.password@
             dataId: ${spring.application.name}-degrade-rules
             groupId: SENTINEL_GROUP
             rule-type: degrade
@@ -71,6 +77,9 @@ spring:
         system:
           nacos:
             server-addr: @config.server-addr@
+            namespace: @config.namespace@
+            username: @config.username@
+            password: @config.password@
             dataId: ${spring.application.name}-system-rules
             groupId: SENTINEL_GROUP
             rule-type: system
@@ -79,6 +88,9 @@ spring:
         authority:
           nacos:
             server-addr: @config.server-addr@
+            namespace: @config.namespace@
+            username: @config.username@
+            password: @config.password@
             dataId: ${spring.application.name}-authority-rules
             groupId: SENTINEL_GROUP
             rule-type: authority
@@ -87,6 +99,9 @@ spring:
         param-flow:
           nacos:
             server-addr: @config.server-addr@
+            namespace: @config.namespace@
+            username: @config.username@
+            password: @config.password@
             dataId: ${spring.application.name}-param-rules
             groupId: SENTINEL_GROUP
             rule-type: param-flow
@@ -95,6 +110,9 @@ spring:
         gw-flow:
           nacos:
             server-addr: @config.server-addr@
+            namespace: @config.namespace@
+            username: @config.username@
+            password: @config.password@
             dataId: ${spring.application.name}-flow-rules
             groupId: SENTINEL_GROUP
             rule-type: gw-flow
@@ -103,6 +121,9 @@ spring:
         gw-api-group:
           nacos:
             server-addr: @config.server-addr@
+            namespace: @config.namespace@
+            username: @config.username@
+            password: @config.password@
             dataId: ${spring.application.name}-api-rules
             groupId: SENTINEL_GROUP
             rule-type: gw-api-group
