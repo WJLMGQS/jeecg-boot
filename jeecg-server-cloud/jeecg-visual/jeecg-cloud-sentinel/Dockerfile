@@ -8,7 +8,7 @@ RUN mkdir -p /jeecg-cloud-sentinel
 
 WORKDIR /jeecg-cloud-sentinel
 
-EXPOSE 8848
+EXPOSE 9000
 
 ADD ./jeecg-cloud-sentinel-3.5.2.jar ./
 

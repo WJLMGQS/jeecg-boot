@@ -6,6 +6,6 @@
 
 172.16.0.11 mtdelog-nginx.org
 172.16.0.80 mtdelog-gateway.org
-172.16.0.90 mtdelog-boot-sentinel.org
+172.16.0.90 mtdelog-sentinel.org
 
 172.16.0.200 mtdelog-boot.org

@@ -38,7 +38,7 @@ spring:
     #Sentinel配置
     sentinel:
       transport:
-        dashboard: mtdelog-boot-sentinel.org:9000
+        dashboard: mtdelog-sentinel.org:9000
       # 支持链路限流
       web-context-unify: false
       filter:

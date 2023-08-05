@@ -41,14 +41,9 @@ services:
     build:
       context: ./docker-sentinel
     restart: on-failure
-    mem_limit: 64m
     volumes:
       - ${SITES_PATH}:/etc/sites
     extra_hosts:
-      - "mtdelog-mysql.org:122.51.217.92"
-      - "mtdelog-minio.org:122.51.217.92"
-      - "mtdelog-rabbitmq.org:122.51.217.92"
-      - "mtdelog-redis.org:122.51.217.92"
       - "mtdelog-nacos.org:122.51.217.92"
     networks:
       mtdelog-network:
@@ -65,6 +60,7 @@ services:
     mem_limit: 320m
     volumes:
       - ${SITES_PATH}:/etc/sites
+      - /usr/deploys/mnt/sentinel/logs:/root/logs/csp
     extra_hosts:
       - "mtdelog-mysql.org:122.51.217.92"
       - "mtdelog-minio.org:122.51.217.92"

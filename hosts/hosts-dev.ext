@@ -1,7 +1,7 @@
 124.220.218.217 mtdelog-dev.org
 124.220.218.217 mtdelog-boot.org
 124.220.218.217 mtdelog-gateway.org
-124.220.218.217 mtdelog-boot-sentinel.org
+124.220.218.217 mtdelog-sentinel.org
 
 122.51.217.92 mtdelog-mysql.org
 122.51.217.92 mtdelog-minio.org
