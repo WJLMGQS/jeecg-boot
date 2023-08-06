@@ -9,4 +9,6 @@ rebel.xml
 
 ## front
 **/*.lock
-!/deploy-configs/
+
+
+deploy-configs/
